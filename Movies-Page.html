@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Page</title>
+    <link rel="Stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .navbar{
+            display: none;
+        }
+        @media(max-width:600px){
+            .navbar{
+                display: block;
+            }
+            .wrapper{
+                /* display: flex; */
+                position: relative;
+            }
+        }
+        footer.footer{
+            /* position: ;
+            bottom: 0;
+            left: 0; */
+            float: right;
+            width: 80%;
+        }
+        section.registeration{
+            width: 75%;
+            float: right;
+            margin-right: 25px;
+        }
+        @media(max-width:1300px){
+            footer.footer{
+                width: 75%;
+            }
+        }
+        @media(max-width:1100px){
+            footer.footer{
+                width: 60%;
+                margin-right: 10px;
+            }
+        }
+        @media(max-width:900px) and (min-width: 601px){
+            footer.footer{
+                display: none;
+            }
+        }
+        @media (max-width:600px){
+            footer.footer{
+                width: 85%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+        </style>
+</head>
+<body>
+     <!-- Header Navbar Start -->
+    <header class="navbar" id="navbar">
+        <h1 class="site-name" id="siteName"><a href="Home-Page.html"><img src="logo.png" alt="Logo-img"></a></h1>
+        <i class="fas fa-bars navBtn" id="navBtn" onclick="sideBarDisplay()"></i>
+    </header>
+    <!-- Header Navbar End-->
+
+        <!-- SideBar Start -->
+    <div class="wrapper" id="wrapper">
+        <div class="sidebar">
+            <h1 class="site-name" id="siteName"><a href="Home-Page.html"><img src="logo.png" alt="Logo-img"></a></h1>
+            <br><br><br><br><br><br>
+            <i class="fas fa-bars navBtn" id="wrapperBtn" onclick="sideBarRemove()"></i>
+            <ul>
+                <li><a href="Home-Page.html"><i class="fas fa-house-user"> Home</i></a></li>
+                <!-- <li class="activePage"><a href="Categories-Page.html"><i class="fas fa-list-alt"> Categories</i> </a></li> -->
+                <li class="activePage"><a href="Movies-Page.html"><i class="fas fa-film"> Movies</i></a></li>
+                <li><a href="Series-Page.html"><i class="fas fa-tape"> Series</i></a></li>
+                <li><a href="News-Page.html" target="_blank"><i class="far fa-newspaper"> News</i></a></li>
+                <li><a href="Credits-Page.html"><i class="fas fa-users"> Credits</i></a></li>
+                <!-- <li><a href="#"><i class="fas fa-sign-out-alt"> logout</i></a></a></li> -->
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SideBar End  -->
+
+    <!-- Page Header Start -->
+    <section class="registeration" id="moviesHeader">
+        <h1> Movies </h1>
+    </section>
+    <!-- Page Header End  -->
+
+    <!-- Page Content Start  -->
+
+    <!-- <br><hr><br> -->
+ 
+    <div class="page-content" id="pageContent" >
+        <div class="item" id="item1">
+            <a href="movie2 The devil all the time.html" target="_blank" alt="The devil all the time">
+                <img src="The Devil.jpg" class="img" alt="The devil of all the time img"><br>
+                <h4> The devil of all the time</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="movie8 1917.html" target="_blank" alt="1917">
+                <img src="1917.jpg" class="img" alt="1917 img"><br>
+                <h4> 1917</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="index.processed Alone.html" target="_blank" alt="Alone">
+                <img src="index.processed Alone.jpg" class="img" alt="Alone img"><br>
+                <h4> Alone</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="movie1 Enola holmes.html" target="_blank" alt="Enola holmes">
+                <img src="enola.jpg" class="img" alt="Enola Holmes img"><br>
+                <h4> Enola Holmes</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="movie7 interstellar.html" target="_blank" alt="Interstellar">
+                <img src="Interstellar.jpg" class="img" alt="Interstellar img"><br>
+                <h4> Interstellar</h4>
+            </a>
+        </div>
+ 
+        <!-- First line End -->
+        <div class="item" id="item">
+            <a href="movie5 joker.html" target="_blank" alt="Joker">
+                <img src="joker.jpg" class="img" alt="Joker img"><br>
+                <h4> Joker</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="movie4 TENET.html" target="_blank" alt="TENET">
+                <img src="TENET.jpg" class="img" alt="Tenet img"><br>
+                <h4> Tenet</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="movie6 The August Virgin.html" target="_blank" alt="The August Virgin">
+                <img src="The August Virgin.jpg" class="img" alt="The August Virgin img"><br>
+                <h4> The August Virgin</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="movie9 Mulan.html" target="_blank" alt="Mulan">
+                <img src="Mulan.jpg" class="img" alt="Mulan img"><br>
+                <h4> Mulan</h4>
+            </a>
+        </div>
+    </div>
+
+        <!-- Page Content End  -->
+
+        <!-- Fotter Code  Start-->
+    <footer class="footer" id="footer">
+        <div class="left-footer">
+            <h2>Show Time</h2>
+            <div>
+                Show time site is a site that gives you
+                a brief description about the movies and the Rate of the movies
+                & little information about the team of the movie.
+            </div>
+        </div>
+        <div class="middle-footer">
+            <a class="fas fa-map-marked-alt link" target="_blank" href="https://goo.gl/maps/fkfYCh9yDdqV9jn79"> Our location <i class="fas fa-globe-africa link"></i>
+            </a>
+    
+            <br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3452.5993374281165!2d31.285106973186938!3d30.077017180458924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1599752931878!5m2!1sen!2seg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="right-footer">
+            <h2><i class="fas fa-envelope"></i>  Send Message</h2>
+            <textarea type="text"></textarea>
+            <input type="button" value="Send">
+        </div>
+        </footer>
+        <!-- Fotter Code  End-->
+
+
+            <!-- To the top of the page button  -->
+    <button onclick="toTopButton()" id="toTopBtn"><i class="fas fa-arrow-circle-up"></i></button>
+
+
+        <script src="Script.js"></script>
+
+
+</body>
+</html>

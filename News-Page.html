@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <link rel="Stylesheet" href="Styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .navbar{
+            display: none;
+        }
+        @media(max-width:900px){
+            footer.footer{
+                width: 90%;
+                float: none;
+
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+        @media(max-width:900px){
+            .navbar{
+                display: block;
+            }
+            .wrapper{
+                /* display: flex; */
+                position: relative;
+                display: none;
+            }
+        }
+        footer.footer{
+            /* position: ;
+            bottom: 0;
+            left: 0; */
+            float: right;
+            width: 80%;
+        }
+        section.registeration{
+            width: 75%;
+            float: right;
+            margin-right: 25px;
+        }
+        @media(max-width:1100px){
+            footer.footer{
+                width: 400px;
+                margin-right: 0px;
+                /* float: right; */
+                position: relative;
+                right: -70px;
+            }
+        }
+         @media(max-width:1300px){
+            footer.footer{
+                width: 75%;
+            }
+        }
+
+
+        /* @media(max-width:900px) and (min-width: 601px){
+            footer.footer{
+                display: none;
+            }
+        }
+        @media (max-width:600px){
+            footer.footer{
+                width: 85%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        } */ 
+        </style>
+
+</head>
+<body>
+    
+         <!-- Header Navbar Start -->
+         <header class="navbar" id="navbar">
+            <h1 class="site-name" id="siteName"><a href="Home-Page.html"><img src="logo.png" alt="Logo-img"></a></h1>
+            <i class="fas fa-bars navBtn" id="navBtn" onclick="sideBarDisplayNews()"></i>
+        </header>
+        <!-- Header Navbar End-->
+    
+            <!-- SideBar Start -->
+        <div class="wrapper" id="wrapper">
+            <div class="sidebar">
+                <h1 class="site-name" id="siteName"><a href="Home-Page.html"><img src="logo.png" alt="Logo-img"></a></h1>
+                <br><br><br><br><br><br>
+                <i class="fas fa-bars navBtn" id="wrapperBtn" onclick="sideBarRemoveNews()"></i>
+                <ul>
+                    <li><a href="Home-Page.html"><i class="fas fa-house-user"> Home</i></a></li>
+                    <!-- <li class="activePage"><a href="Categories-Page.html"><i class="fas fa-list-alt"> Categories</i> </a></li> -->
+                    <li class="activePage"><a href="Movies-Page.html"><i class="fas fa-film"> Movies</i></a></li>
+                    <li><a href="Series-Page.html"><i class="fas fa-tape"> Series</i></a></li>
+                    <!-- <li><a href="#"><i class="far fa-newspaper"> News</i></a></li> -->
+                    <li><a href="Credits-Page.html"><i class="fas fa-users"> Credits</i></a></li>
+                    <!-- <li><a href="#"><i class="fas fa-sign-out-alt"> logout</i></a></a></li> -->
+                </ul>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- SideBar End  -->
+    
+        <!-- Page Header Start -->
+        <section class="registeration" id="moviesHeader">
+            <h1> News </h1>
+        </section>
+        <!-- Page Header End  -->
+        <br><br><br><br><br>
+
+        <!-- News Content Start -->
+     
+        <div class="containerNews" id="container1">
+            <h1 class="head">
+                Up Coming Movies
+            </h1>
+            <div class="position">
+                <img src="https://amayei.nyc3.digitaloceanspaces.com/2020/03/mm.jpg">
+                <p><b class="name">"No time to die"</b>
+                    <br>
+                    <b>gener:</b>action
+                    <br>
+                    <b>Director:</b>Cary Joji Fukunaga
+                    <br>
+                    <b>Writer:</b>Neal Purvis,Robert Wade, Cary Joji Fukunaga, Phoebe Waller-Bridge, Scott Z. Burns
+                    <br>
+                    <b>Release Date (theaters):</b>Nov 20, 2020  
+                    <br>
+                   <b>Info: Recruited to rescue a kidnapped scientist, globe-trotting spy James Bond finds himself<br> hot on the trail of
+                   a mysterious villain who's armed with a dangerous new technology.</b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://images-ext-2.discordapp.net/external/m7Sc-9PzN0XggCSYymQks7YlhHmUHebrnPLTeIJ8gZk/%3Fq%3Dtbn%3AANd9GcQ4ng-H3amSzOv3VNQUPRxPqEzjyzb7h7_P7iDRa0lwUNUceNW3/https/encrypted-tbn2.gstatic.com/images?width=250&height=375">
+                <p ><b class="name">"Death On The Nile"</b>
+                    <br>
+                    <b>Gener:</b>crime,drama, mysteryand thriller 
+                    <br>
+                    <b>Director:</b>Kenneth Branagh
+                    <br>
+                    <b>Writer:</b>Michael Green
+                    <br>
+                    <b>Release Date (theaters):</b>Oct 23, 2020 
+                    <br>
+                   <b>Info: Detective Hercule Poirot investigates the murder of a young heiress aboard a cruise ship on the Nile River.</b>
+                </p>
+             </div>
+            <div class="position">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/Free_Guy_Theatrical_First_Poster.jpg">
+                <p><b class="name">"Free Guy"</b>
+                    <br>
+                    <b>Gener:</b>Action, Comedy
+                    <br>
+                    <b>Director:</b>Shawn Levy
+                    <br>
+                    <b>Writer:</b>Matt Lieberman
+                    <br>
+                    <b>Release Date (theaters):</b>Dec 11, 2020
+                    <br>
+                    <b>
+                        Info: A bank teller called Guy realizes he is a background character in
+                        <br>
+                        an open world video game called Free City that will soon go offline.
+                    </b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://m.media-amazon.com/images/M/MV5BY2NkMzhjMzEtOWI3Ni00ZjQ4LTg4NTEtZGVkZDY2NjFhMTA3XkEyXkFqcGdeQXVyMjc2MDQ2NjM@._V1_UY1200_CR85,0,630,1200_AL_.jpg">
+                <p><b class="name">"The Empty Man"</b>
+                    <br>
+                    <b>Gener:</b>Horror
+                    <br>
+                    <b>Director:</b>David Britten Prior
+                    <br>
+                    <b>Producers:</b> Ross Richie, Adam Yoelin, Stephen Christy, Philip Waley, Adam Friedlander
+                    <br>
+                    <b>Release Date (theaters):</b>Dec 4, 2020 
+                    <br>
+                   <b>Info: A series of mysterious disappearances in a small Midwestern town may be linked to a supernatural entity.</b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/42/Two_hearts_xlg.jpg">
+                <p><b class="name">"Two Hearts"</b>
+                    <br>
+                    <b>Gener:</b>Romance, Drama
+                    <br>
+                    <b>Director:</b>Lance Hool
+                    <br>
+                    <b>Writer:</b>Veronica Hool, Robin U. Russin 
+                    <br>
+                    <b>Release Date (theaters):</b>Oct 16, 2020
+                    <br>
+                    <b>
+                        Info: A college student falls madly in love with a classmate,
+                        <br>
+                         while a Cuban exile falls for a beautiful flight attendant.
+                   </b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://prodimage.images-bn.com/pimages/0032429335647_p0_v1_s550x406.jpg">
+                <p><b class="name">"Top Gun:Maverick"</b>
+                    <br>
+                    <b>Gener:</b>Action
+                    <br>
+                    <b>Director:</b>Joseph Kosinski
+                    <br>
+                    <b>Producers:</b>Tom Cruise, Jerry Bruckheimer, Christopher McQuarrie, David Ellison
+                    <br>
+                    <b>Release Date (theaters):</b>Dec 23 , 2020
+                    <br>
+                    <b>Info: Pete "Maverick" Mitchell keeps pushing the envelope after years of service as one of the Navy's top aviators. He must soon confront the past while training a new squad of graduates for a dangerous mission that demands the ultimate sacrifice.
+                    </b>
+                </p>
+             </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="containerNews" id="container2">
+            <h1 class="head">Up Coming tv Series</h1>
+
+            <div class="position">
+                <img src="https://static.sorozatjunkie.hu/wp-content/uploads/2019/11/HBO-The-Undoing-poster.jpg">
+                <p><b class="name">"The Undoing"</b>
+                    <br><b>Genres</b>:Comedy, Drama
+                    <b>creator:</b>David E.Kelley
+                    <br>
+                    <b>Release Date:</b>Oct 26 , 2020
+                    <br>
+                    <b>Info: A successful therapist's life unfolds on the eve of her first book release.
+                    </b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://m.media-amazon.com/images/M/MV5BYTFjZjQzZDgtOWEyNy00YmY1LTgyYjQtMTBlODUxZTBiZWRkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY1200_CR90,0,630,1200_AL_.jpg">
+                <p><b class="name">"Emily In Paris"</b>
+                    <br><b>Genres:</b>Comedy, Drama
+                    <br>
+                    <b>creator:</b>Darren Star
+                    <br>
+                    <b>Release Date:</b>Oct 2 , 2020
+                    <br>
+                   <b>Info: A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with an American perspective on things.
+                       </b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFzMtQ8OAZXAM7YMRY2peQUF7p-F_xwWjLFw&usqp=CAU">
+                <p><b class="name">"Someone To Has Die"</b>
+                    <br><b>Genres</b>Crime, Drama, Thriller
+                    <br>
+                    <b>creator:</b>Darren Star
+                    <br>
+                    <b>Release Date:</b>Oct 16 , 2020
+                    <br>
+                    <b>Info: The story begins with a young boy being asked by his parents to return to
+                        <br>
+                         Mexico to meet his fiance.He returns accompanied by Lazaro, a mysterious ballet dancer.</b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81VEBBlRlVL.jpg">
+                <p><b class="name">"The Queen's Gambit"</b>
+                    <br><b>Genres</b> Drama
+                    <br>
+                    <b>creator:</b>Walter Tevis
+                    <br>
+                    <b>Release Date:</b>Oct 23 , 2020
+                    <br>
+                    <b>Info: Eight year-old orphan Beth Harmon is quiet, sullen, and by all appearances unremarkable. That is, until she plays her first game of chess her isolation grows more frightening, and the thought of escape becomes all the more tempting. Based on the book by Walter Tevis.</b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/20/Official_Poster_of_the_FOX_television_series_I_Can_See_Your_Voice.png">
+                <p><b class="name">"I Can See Your Voice "</b>
+                    <br><b>Genres</b> Game show
+                    <br>
+                    <b>creator:</b> Ken Jeong
+                    <br>
+                    <b>Release Date:</b>sept 23 , 2020
+                    <br>
+                    <b>Info:A pop star try and guess the skilled vocalists from the tone-deaf singers
+                        <br>
+                         without hearing them sing. With the help of a "tone-deaf detective team.</b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://image.scoopwhoop.com/w594/s3.scoopwhoop.com/anj2/5e0f100e50758d1bcba7fb1b/04a1cb20-9b9f-48de-953a-342902361a07.jpg.webp">
+                <p><b class="name">"Anne With An E III"</b>
+                    <br><b>Genres</b> Drama
+                    <br>
+                    <b>creator:</b>Walter Tevis
+                    <br>
+                    <b>Release Date:</b>jan 3 , 2020
+                    <br>
+                    <b>Info: Anne, the 13-year-old orphan's adventures of seeking love, acceptance and <br> discovering her place in the world will come to an end with the third season of<br> Netflix's adaptation of Lucy Maud Montgomery's classic Anne of Green Gables.<br>
+                     </b>
+                </p>
+            </div>
+            <div class="position">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0WDd6ADrff_f7PYa9ogq93jN_sKXooaGg7wVBwq93c0mlg9B1">
+                <p><b class="name">"The Comey Rule"</b>
+                    <br><b>Genres</b> Drama
+                    <br>
+                    <b>creator:</b>Billy Ray
+                    <br>
+                    <b>Release Date:</b>sep 27 , 2020
+                    <br>
+                    <b>Info:Jeff Daniels and Brendan Gleeson star as former FBI Dir. James Comey 
+                        <br>and President Donald J. Trump in this limited series of the story of two powerful men,<br> whose strikingly different ethics and loyalties put them on a collision course.
+                    </b>
+                </p>
+            </div>
+        </div>
+        <!-- News Content End  -->
+
+
+
+        <!-- Fotter Code  Start-->
+        <footer class="footer" id="footer">
+            <div class="left-footer">
+                <h2>Show Time</h2>
+                <div>
+                    Show time site is a site that gives you
+                    a brief description about the movies and the Rate of the movies
+                    & little information about the team of the movie.
+                </div>
+            </div>
+            <div class="middle-footer">
+                <a class="fas fa-map-marked-alt link" target="_blank" href="https://goo.gl/maps/fkfYCh9yDdqV9jn79"> Our location <i class="fas fa-globe-africa link"></i>
+                </a>
+        
+                <br><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3452.5993374281165!2d31.285106973186938!3d30.077017180458924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1599752931878!5m2!1sen!2seg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="right-footer">
+                <h2><i class="fas fa-envelope"></i>  Send Message</h2>
+                <textarea type="text"></textarea>
+                <input type="button" value="Send">
+            </div>
+            </footer>
+            <!-- Fotter Code  End-->
+    
+    
+                <!-- To the top of the page button  -->
+        <button onclick="toTopButton()" id="toTopBtn"><i class="fas fa-arrow-circle-up"></i></button>
+    
+    
+            <script src="Script.js"></script>
+    
+</body>
+</html>

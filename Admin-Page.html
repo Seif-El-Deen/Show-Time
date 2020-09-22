@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="Stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="Script.js"></script>
+
+</head>
+<body>
+    
+    <header class="navbar">
+        <h1 class="site-name" id="siteName"><a href="Home-Page.html"><img src="logo.png" alt="Logo-img"></a></h1>
+        <i class="fas fa-bars navBtn" id="navBtn" onclick="navBar()"></i>
+        <ul class="navBtns" id="navBtns" onresize="display()">
+            <li><a href="Home-Page.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><i class="fas fa-tv"></i> Movies</li>
+            <!-- <li><i class="far fa-newspaper"></i> News</li> -->
+            <li><i class="fas fa-star"></i> Series</li>
+            <li><a href="Credits-Page.html"><i class="fas fa-users"></i> Credits</a></li>
+        </ul>
+    </header>
+
+
+    <section class="registeration" id="adminHeader">
+        <h1><i class="fas fa-user-tie"></i> Admin</h1>
+    </section>
+
+    <div class="section1" id="section1">
+        <h1>Background Color</h1>
+        <div>
+            <!-- <input type="button" class="red" onclick="backgroundRed()" value="Red">
+            <input type="button" class="yellow" onclick="backgroundYellow()" value="Yellow">
+            <input type="button" class="black" onclick="backgroundBlack()" value="Black">
+            <input type="button" class="green" onclick="backgroundGreen()" value="green">
+            <input type="button" class="gray" onclick="backgroundGray()" value="Gray"> -->
+            <label> Choose Color: </label>
+            <input type="color" value="#cccccc" oninput="changeColor()" id="color">
+        </div>
+    </div>
+
+
+    
+
+
+    <script>        document.getElementById('adminHeader').style.display='block';
+    </script>
+    <script src="Script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits Page</title>
+    <link rel="Stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+    
+    <header class="navbar">
+        <h1 class="site-name" id="siteName"><a href="Home-Page.html"><img src="logo.png" alt="Logo-img"></a></h1>
+        <i class="fas fa-bars navBtn" id="navBtn" onclick="navBarCreditsPage()"></i>
+        <ul class="navBtns" id="navBtns" onresize="display()">
+            <li><a href="Home-Page.html"><i class="fas fa-home"></i> Home</a></li>
+            <!-- <li><i class="fas fa-list-alt"></i><a href="Categories-Page.html"> Categories</a></li> -->
+            <li><a href="Movies-Page.html"><i class="fas fa-tv"></i> Movies</a></li>
+            <li><a href="News-page.html" target="_blank"><i class="far fa-newspaper"></i> News</a></li>
+            <li><a href="Series-Page.html"><i class="fas fa-star"></i> Series</a></li>
+            <li class="activePage"><a href="Credits-Page.html"><i class="fas fa-users"></i> Credits</a></li>
+        </ul>
+    </header>
+
+
+    <section class="registeration" id="registeration">
+        <ul class="ul-registeration">
+            <li onclick="signUpForm()"><i class="fas fa-user-plus"></i> Sign UP</li>
+            <li onclick="logInForm()"><i class="fas fa-sign-in-alt"></i> Log IN</li>
+        </ul>
+    </section>
+
+    <section class="registeration" id="adminHeader">
+        <h1><i class="fas fa-user-tie"></i> Admin</h1>
+    </section>
+
+    <div class="creditsContent" id="creditsContent">
+        <h1>Site Creators</h1>
+        <div>
+            This Site is created by a group of students at the faculty of computer and information siences Ain-Shams University. 
+        </div>
+        <div>
+            <h1>Omar Ashraf Morshady <br><span>Section 15</span></h1>
+            <h1>Zead Khaled Fekry <br><span>Section 10</span></h1>
+            <h1>Seif El-Deen Mostafa Yossef <br><span>Section 11</span></h1>
+            <h1>Sara Mohamed Osman <br><span>Section 10</span></h1>
+            <h1>Radwa Tarek Ahmed <br><span>Section 9</span></h1>
+            <h1>Hassnaa Elshafei <br><span>Section 8</span></h1>
+        </div>
+        <p>We Hope You Enjoied Your Tour In Our Site. </p>
+    </div>
+
+ <!-- Fotter Code  -->
+ <footer class="footer" id="footer">
+    <div class="left-footer">
+      <h2>Show Time</h2>
+      <div>
+        Show time site is a site that gives you
+        a brief description about the movies and the Rate of the movies
+        & little information about the team of the movie.
+    </div>
+    </div>
+    <div class="middle-footer">
+        <a class="fas fa-map-marked-alt link" target="_blank" href="https://goo.gl/maps/fkfYCh9yDdqV9jn79"> Our location <i class="fas fa-globe-africa link"></i>
+        </a>
+
+        <br><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3452.5993374281165!2d31.285106973186938!3d30.077017180458924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1599752931878!5m2!1sen!2seg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="right-footer">
+      <h2><i class="fas fa-envelope"></i>  Send Message</h2>
+      <textarea type="text"></textarea>
+        <input type="button" value="Send">
+    </div>
+  </footer>
+
+
+
+    <!-- Sign up Form  -->
+    <section class="signUp" id="signUp">
+        <div>
+            <h1 class="head">SIGN UP FOR REVIEWERS</h1><br>
+            <span class="closeBtn" onclick="closeSignUpForm()"><i class="fas fa-times-circle"></i></span>
+            <hr>
+            <div class="facebookSingUp"><i class="fab fa-facebook"></i> SIGN UP WITH FACEBOOK</div>
+            <hr><br>
+            <form>
+                <label for="first name">First Name</label><label for="last name">Last Name</label><br>
+                <input type="text" class="firstName">
+                <input type="text" class="lastName">
+                <label for="email">Email</label><br>
+                <input type="email" class="email"><br>
+                <label for="password">Password</label><br><br>
+                <p>Use at least 8 characters and include a number or a symbol.</p>
+                <input type="password" class="password"><br><br>
+                <input type="checkbox" class="checkbox">
+                <p>By signing up, you agree to receiving newsletters from Show Time. You may later unsubscribe.</p><br>
+                <input type="button" class="CreateAccBtn" value="Create Your Account">
+            </form>
+        </div>
+    </section>
+
+        <!-- Log in Form -->
+    <section class="logIn" id="logIn">
+        <div>
+            <h1>SIGN IN <span class="fas fa-times-circle" onclick="closeLogInForm()"></span></h1>
+            <!-- <div class="facebookSingUp"><i class="fab fa-facebook"></i> SIGN UP WITH FACEBOOK</div> -->
+            <br><hr><br>
+            <h1>ADMIN SIGN IN</h1>
+            <form>
+                <label for="email address">Email address</label><br>
+                <input type="email" id="adminEmail">
+                <label for="password" id="adminPasswordText">Password</label><br>
+                <input type="password" id="adminPassword">
+                <input type="button" class="logInBtn" onclick="adminLogin()" value="LOG IN">
+            </form>
+            <br><hr><br>
+            <h1>USER SIGN IN</h1>
+            <form>
+                <label for="email address">Email address</label><br>
+                <input type="email" id="userEmail">
+                <label for="password" id="userPasswordText">Password</label><br>
+                <input type="password" id="userPassword">
+                <input type="button" class="logInBtn" onclick="userLogin()" value="LOG IN">
+            </form>
+            <div class="forgot">
+                <h3><a href="">FORGOT YOUR PASSWORD?</a></h3>
+                <p>Don't have an account? <h3><a onclick="signUpForm()">SIGN UP HERE</a></h3></p>
+            </div>
+        </div>
+    </section>  
+
+
+        <!-- To the top of the page button  -->
+        <button onclick="toTopButton()" id="toTopBtn"><i class="fas fa-arrow-circle-up"></i></button>
+
+
+
+    <script src="Script.js"></script>
+    
+</body>
+</html>

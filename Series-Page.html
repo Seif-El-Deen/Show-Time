@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Page</title>
+    <link rel="Stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .navbar{
+            display: none;
+        }
+        @media(max-width:600px){
+            .navbar{
+                display: block;
+            }
+            .wrapper{
+                /* display: flex; */
+                position: relative;
+            }
+        }
+        footer.footer{
+            /* position: ;
+            bottom: 0;
+            left: 0; */
+            float: right;
+            width: 80%;
+        }
+        section.registeration{
+            width: 75%;
+            float: right;
+            margin-right: 25px;
+        }
+        @media(max-width:1300px){
+            footer.footer{
+                width: 75%;
+            }
+        }
+        @media(max-width:1100px){
+            footer.footer{
+                width: 60%;
+                margin-right: 10px;
+            }
+        }
+        @media(max-width:900px) and (min-width: 601px){
+            footer.footer{
+                display: none;
+            }
+        }
+        @media (max-width:600px){
+            footer.footer{
+                width: 85%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+        </style>
+</head>
+<body>
+     <!-- Header Navbar Start -->
+    <header class="navbar" id="navbar">
+        <h1 class="site-name" id="siteName"><a href="Home-Page.html"><img src="logo.png" alt="Logo-img"></a></h1>
+        <i class="fas fa-bars navBtn" id="navBtn" onclick="sideBarDisplay()"></i>
+    </header>
+    <!-- Header Navbar End-->
+
+        <!-- SideBar Start -->
+    <div class="wrapper" id="wrapper">
+        <div class="sidebar">
+            <h1 class="site-name" id="siteName"><a href="Home-Page.html"><img src="logo.png" alt="Logo-img"></a></h1>
+            <br><br><br><br><br><br>
+            <i class="fas fa-bars navBtn" id="wrapperBtn" onclick="sideBarRemove()"></i>
+            <ul>
+                <li><a href="Home-Page.html"><i class="fas fa-house-user"> Home</i></a></li>
+                <!-- <li class="activePage"><a href="Categories-Page.html"><i class="fas fa-list-alt"> Categories</i> </a></li> -->
+                <li><a href="Movies-Page.html"><i class="fas fa-film"> Movies</i></a></li>
+                <li class="activePage"><a href="Series-Page.html"><i class="fas fa-tape"> Series</i></a></li>
+                <li><a href="News-Page.html" target="_blank"><i class="far fa-newspaper"> News</i></a></li>
+                <li><a href="Credits-Page.html"><i class="fas fa-users"> Credits</i></a></li>
+                <!-- <li><a href="#"><i class="fas fa-sign-out-alt"> logout</i></a></a></li> -->
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SideBar End  -->
+
+    <!-- Page Header Start -->
+    <section class="registeration" id="moviesHeader">
+        <h1> Series </h1>
+    </section>
+    <!-- Page Header End  -->
+
+    <!-- Page Content Start  -->
+
+    <!-- <br><hr><br> -->
+ 
+    <div class="page-content" id="pageContent" >
+        <div class="item" id="item4">
+            <a href="Series1 Anne with an E.html" target="_blank" alt="Anne With An E">
+                <img src="Anne With An E.jpg" class="img" alt="Anne With An E img"><br>
+                <h4> Anne With An E</h4>
+            </a>
+        </div>
+        <!-- onclick="seriesDescription(15)" -->
+        <div class="item" id="item5">
+            <a href="Series2 Cable Girls.html" target="_blank" alt="Cable Girls">
+                <img src="Cable Girls.jpg" class="img" alt="Cable Girls img"><br>
+                <h4> Cable Girls</h4>
+            </a>
+        </div>
+
+        <!-- First line End -->
+        <div class="item" id="item6">
+            <a href="Series3 Dark.html" target="_blank" alt="Dark">
+                <img src="Dark.jpg" class="img" alt="Dark img"><br>
+                <h4> Dark </h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="Series4 I am not okay with this.html" target="_blank" alt="I am not okay with this">
+                <img src="I Am Not Okay With This.jpg" class="img" alt="I am not okay with this img"><br>
+                <h4> I Am Not Okay With This</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="Series5 Lock _ Key.html" target="_blank" alt="Lock _ Key">
+                <img src="Lock _ Key.jpg" class="img" alt="Lock _ Key img"><br>
+                <h4> Lock Key</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="Series6 Lucifer.html" target="_blank" alt="Lucifer">
+                <img src="Lucifer.jpg" class="img" alt="Lucifer img"><br>
+                <h4> Lucifer</h4>
+            </a>
+        </div>
+        <div class="item" id="item">
+            <a href="Series7 sherlock.html" target="_blank" alt="Sherlock">
+                <img src="Sherlock.jpg" class="img" alt="Sherlock img"><br>
+                <h4> Sherlock</h4>
+            </a>
+        </div>
+
+        <div class="item" id="item1" onclick="seriesDescription(11)">
+            <img src="The good doctor2.jpg" class="img" alt="The devil of all the time img"><br>
+            <h4> The Good Doctor</h4>
+        </div>
+        <div class="item" id="item2" onclick="seriesDescription(12)">
+                <img src="Mr Robot.jpg" class="img" alt="1917 img"><br>
+                <h4> Mr Robot</h4>
+        </div>
+        <div class="item" id="item3" onclick="seriesDescription(13)">
+                <img src="La Casa de papel.jpg" class="img" alt="Alone img"><br>
+                <h4> La Casa De Papel</h4>
+        </div>
+    </div>
+
+        <!-- Page Content End  -->
+
+        <!-- Fotter Code  Start-->
+    <footer class="footer" id="footer">
+        <div class="left-footer">
+            <h2>Show Time</h2>
+            <div>
+                Show time site is a site that gives you
+                a brief description about the movies and the Rate of the movies
+                & little information about the team of the movie.
+            </div>
+        </div>
+        <div class="middle-footer">
+            <a class="fas fa-map-marked-alt link" target="_blank" href="https://goo.gl/maps/fkfYCh9yDdqV9jn79"> Our location <i class="fas fa-globe-africa link"></i>
+            </a>
+    
+            <br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3452.5993374281165!2d31.285106973186938!3d30.077017180458924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1599752931878!5m2!1sen!2seg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="right-footer">
+            <h2><i class="fas fa-envelope"></i>  Send Message</h2>
+            <textarea type="text"></textarea>
+            <input type="button" value="Send">
+        </div>
+        </footer>
+        <!-- Fotter Code  End-->
+
+
+
+        <!--  Content To the Description Start   -->
+
+            <!-- First Series Start (The good Doctor) -->
+            <div class="banner-img img11" id="banner-img11"></div>
+            <div class="banner-text" id="banner-text11">
+                <h1 >
+                    <p>
+                    Title:<strong> The Good Doctor</strong> (2020)
+                    </p>
+                    <p>
+                        The Good Doctor
+                    </p>
+                </h1>                
+                <span class="fas fa-times-circle" onclick="closeSeriesDiscription(11)"></span>
+                <article>    
+                    <img alt="The good doctor" title="The good doctor" src="The good doctor1.jpg" alt="The good doctor"/>         
+                    <div class="outline">
+                        <p >
+                            A young surgeon with autism and Savant
+                            syndrome is recruited into the pediatric
+                            surgical unit of a prestigious hospital.
+                            Alone in the world and unable to personally
+                            connect with those around him, he uses his
+                            extraordinary medical gifts to save lives
+                            and challenge the skepticism of his
+                            colleagues.
+                        </p>
+                    </div>
+                    <div class="director">
+                        <span><b>Directors:</b> David Shore.</span>
+                    </div>
+                    <div class="writter">
+                        <span><b>writer:</b> David Shore.</span>
+                    </div>
+                    <div class="actor">
+                        <span><b>Stars:</b>Freddie Highmore, Richard Schiff, Hill Harper.</span>
+                    </div>
+                    <div class="rate">
+                        <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></span>
+                    </div>
+                </article>
+            </div>
+                        <!-- First Series End (The Good Doctor) -->
+    
+                <!-- Second Series Start (Mr Robot) -->
+                <div class="banner-img img12" id="banner-img12"></div>
+                <div class="banner-text" id="banner-text12">
+                    <h1 >
+                        <p>
+                        Title:<strong> Mr Robot</strong> (2017)
+                        </p>
+                        <p>
+                            Mr Robot
+                        </p>
+                    </h1>                
+                    <span class="fas fa-times-circle" onclick="closeSeriesDiscription(12)"></span>
+                    <article>    
+                        <img alt="Jamie Lee Curtis" title="Jamie Lee Curtis" src="Mr Robot.jpg" alt="Wonder"/>         
+                        <div class="outline">
+                            <p >
+                                Thriller TV Series whose creator is Sam
+                                Esmail. It was released on 10 Jul. 2016.
+                                It stars Rami Malek, Christian Slater,
+                                Portia Doubleday. The season begins with:
+                                Five/nine has changed the world; Elliot is
+                                in seclusion; Angela finds happiness at Evil
+                                Corp.; fsociety delivers a malicious payload...
+                                What await ahead?
+
+                            </p>
+                        </div>
+                        <div class="director">
+                            <span><b>Directors:</b> Sam Esmail.</span>
+                        </div>
+                        <div class="writter">
+                            <span><b>writer:</b> Sam Esmail.</span>
+                        </div>
+                        <div class="actor">
+                            <span><b>Stars:</b>Rami Malek, Christian Slater, Portia Doubleday.</span>
+                        </div>
+                        <div class="rate">
+                            <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                        </div>
+                    </article>
+                </div>
+                            <!-- Second series End (Mr Robot) -->
+    
+    
+                                        <!-- Third Series Start (La Casa de Papel) -->
+                <div class="banner-img img13" id="banner-img13"></div>
+                <div class="banner-text" id="banner-text13">
+                    <h1 >
+                        <p>
+                            Title:<strong>La Casa de Papel</strong> (2017)
+                        </p>
+                        <p>
+                            La Casa de Papel
+                        </p>
+                    </h1>                
+                    <span class="fas fa-times-circle" onclick="closeSeriesDiscription(13)"></span>
+                    <article>    
+                        <img alt="knvies Out" title="knvies Out" src="La Casa de papel.jpg" alt="knvies Out"/>         
+                        <div class="outline">
+                            <p >
+                                It follows an enigmatic character called The
+                                Professor who plans something unique when he 
+                                plots to carry out the biggest robbery in history.
+                                In order to carry out the ambitious plan,
+                                he recruits a gang of eight people with certain
+                                abilities who have nothing to lose. The goal
+                                is to enter the Royal Mint of Spain so that
+                                they can print 2.4 billion euros. In order 
+                                to do this, they need eleven days of seclusion,
+                                during which they will have to deal with
+                                sixty-seven hostages and the elite forces of
+                                the Police.
+                            </p>
+                        </div>
+                        <div class="director">
+                            <span><b>Directors:</b> Álex Pina.</span>
+                        </div>
+                        <div class="writter">
+                            <span><b>writer:</b> Álex Pina.</span>
+                        </div>
+                        <div class="actor">
+                            <span><b>Stars:</b> Úrsula Corberó, Itziar Ituño, Álvaro Morte.</span>
+                        </div>
+                        <div class="rate">
+                            <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                        </div>
+                    </article>
+                </div>
+                            <!-- Third Series End (La Casa de Papel) -->
+    
+    
+                              <!-- 4th Movie Start (Greyhound) -->
+                <div class="banner-img img14" id="banner-img14"></div>
+                <div class="banner-text" id="banner-text14">
+                    <h1 >
+                        <p>
+                            Title:<strong>Greyhound</strong> (2019)
+                        </p>
+                        <p>
+                            Greyhound
+                        </p>
+                    </h1>                
+                    <span class="fas fa-times-circle" onclick="closeSeriesDiscription(14)"></span>
+                    <article>    
+                        <img alt="Greyhound" title="Greyhound" src="Greyhound.jpg" alt="Greyhound"/>         
+                        <div class="outline">
+                            <p >
+
+                            </p>
+                        </div>
+                        <div class="director">
+                            <span><b>Directors:</b> Aaron Schneider,</span>
+                        </div>
+                        <div class="writter">
+                            <span><b>writer:</b> Aaron Schneider,</span>
+                        </div>
+                        <div class="actor">
+                            <span><b>Stars:</b> Tom Hanks, Stephen Graham, Elisabeth Shue.</span>
+                        </div>
+                        <div class="rate">
+                            <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                        </div>
+                    </article>
+                </div>
+                            <!-- 4th Movie End (Greyhound) -->
+    
+                                                      <!-- 5th Movie Start (Avengers End Game) -->
+                <div class="banner-img img15" id="banner-img15"></div>
+                <div class="banner-text" id="banner-text5">
+                    <h1 >
+                        <p>
+                            Title:<strong>Avengers: Endgame </strong> (2019)
+                        </p>
+                        <p>
+                            Avengers: Endgame
+                        </p>
+                    </h1>                
+                    <span class="fas fa-times-circle" onclick="closeSeriesDiscription(15)"></span>
+                    <article>    
+                        <img alt="Avengers: Endgame" title="Avengers: Endgame" src="Avengers End Game.jpg" alt="Avengers: Endgame"/>         
+                        <div class="outline">
+                            <p >
+                                After the devastating events of Avengers:
+                                Infinity War, the universe is in ruins 
+                                due to the efforts of the Mad Titan, Thanos.
+                                With the help of remaining allies, 
+                                the Avengers must assemble once more
+                                in order to undo Thanos' actions and
+                                restore order to the universe once
+                                and for all, no matter what consequences
+                                may be in store.
+                            </p>
+                        </div>
+                        <div class="director">
+                            <span><b>Directors:</b> Joe Russo, Anthony Russo.</span>
+                        </div>
+                        <div class="writter">
+                            <span><b>writer:</b> Joe Russo, Anthony Russo,</span>
+                        </div>
+                        <div class="actor">
+                            <span><b>Stars:</b> Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle.</span>
+                        </div>
+                        <div class="rate">
+                            <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></span>
+                        </div>
+                    </article>
+                </div>
+                            <!-- 5th Movie End (Avengers End Game) -->
+    
+
+
+
+
+
+
+
+
+
+
+            <!-- To the top of the page button  -->
+    <button onclick="toTopButton()" id="toTopBtn"><i class="fas fa-arrow-circle-up"></i></button>
+
+
+        <script src="Script.js"></script>
+
+
+</body>
+</html>

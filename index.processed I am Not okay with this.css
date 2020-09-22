@@ -1,0 +1,76 @@
+.heading {
+  font-size: 3em;
+  background-color: #F0C014 ;
+  color :white ;
+ font-family: Inconsolata, sans-serif;
+}
+.sidebarr{
+  font-size: 15pt;
+  color : black;
+  width: 450px;
+  position: fixed;
+  z-index: 1;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 1px 0 ;
+}
+.sidebarr a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+.sidebarr a:hover {
+  color: #064579;
+}
+.main {
+  margin-left: 450px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidebarr {padding-top: 15px;}
+  .sidebarr a {font-size: 18px;}
+}
+
+.plotsummary {
+  font-size: 15pt;
+font-style: italic;
+font-family: cursive;
+}
+.info{
+  font-size: 15pt;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.rating
+{
+  font-size: 15pt;
+font-style: italic;
+font-family: cursive;
+}
+h2 {
+  font-style: italic;
+  color : white ;
+  font-family: cursive;
+  background-color: #F0C014;
+}
+
+
+.story {
+  /*width : 772pt ;
+  padding : 5pt;
+  margin : 5pt ;
+  color : dimgray ;
+ border : 0.5px solid lightgray ; */
+  font-size: 15pt;
+  font-family: cursive;
+  font-style: italic;
+  color : black;
+}
+
+body {
+   background: white;
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page</title>
+    <link rel="Stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="Script.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <h1 class="site-name" id="siteName"><a href="Home-Page.html"><img src="logo.png" alt="Logo-img"></a></h1>
+        <i class="fas fa-bars navBtn" id="navBtn" onclick="navBar()"></i>
+        <ul class="navBtns" id="navBtns" onresize="display()">
+            <li class="activePage"><a href="Home-Page.html"><i class="fas fa-home"></i> Home</a></li>
+            <!-- <li><i class="fas fa-list-alt"></i><a href="Categories-Page.html"> Categories</a></li> -->
+            <li><a href="Movies-Page.html"><i class="fas fa-tv"></i> Movies</a></li>
+            <li><a href="Series-Page.html"><i class="fas fa-star"></i> Series</a></li>
+            <li><a href="News-Page.html" target="_blank"><i class="far fa-newspaper"></i> News</a></li>
+            <li><a href="Credits-Page.html"><i class="fas fa-users"></i> Credits</a></li>
+        </ul>
+    </header>
+
+
+    <section class="registeration" id="registeration">
+        <ul class="ul-registeration">
+            <li onclick="signUpForm()"><i class="fas fa-user-plus"></i> Sign UP</li>
+            <li onclick="logInForm()"><i class="fas fa-sign-in-alt"></i> Log IN</li>
+        </ul>
+    </section>
+
+    <section class="registeration" id="adminHeader">
+        <h1><i class="fas fa-user-tie"></i> Admin</h1>
+    </section>
+
+    <section class="registeration" id="userHeader">
+        <h1><i class="fas fa-user"></i> User</h1>
+    </section>
+
+        <!-- slider-->
+
+    <div class="slidershow" id="slideShow">
+        <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+        <input type="radio" name="r" id="r5">
+            <div class="slide s1">
+                <img src="Wonder.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Mulan.jpg" alt="Molan-Movie">
+            </div>
+            <div class="slide">
+                <img src="Avengers End Game.jpg" alt="After-Earth">
+            </div>
+            <div class="slide">
+                <img src="Black-Panther.jpeg" alt="Black-Panther">
+            </div>
+            <div class="slide">
+                <img src="Greyhound.jpg" alt="Greyhound">
+            </div>
+        </div>
+        <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h1 id="motViewing">
+    Most Viewing
+    </h1>
+    <br>
+    <!-- topics -->
+    <div class="container" id="page-content">
+        <div class="gallery" onclick="description(1)">
+            <img src="Mulan.jpg">
+            <div class="overlay overlayleft">
+                <div class="description">
+                    Mulan
+                </div>
+            </div>
+        </div>
+        <div class="gallery" onclick="description(2)">
+            <img src="Wonder.jpg">
+            <div class="overlay overlayleft">
+                <div class="description">
+                    Wonder
+                </div>
+            </div>
+        </div>
+        <div class="gallery" onclick="description(3)">
+            <img src="knvies Out.jpg">
+                <div class="overlay overlayleft">
+                <div class="description">
+                    Knives Out
+                </div>
+            </div>
+        </div>
+        <div class="gallery" onclick="description(4)">
+            <img src="Greyhound.jpg">
+                <div class="overlay overlayleft">
+                <div class="description">
+                    Greyhound
+                </div>
+            </div>
+        </div>
+        <div class="gallery" onclick="description(5)">
+            <img src="Avengers End Game.jpg">
+                <div class="overlay overlayleft">
+                <div class="description">
+                    Avengers: Endgame
+                </div>
+            </div>
+        </div>
+        <div class="gallery" onclick="description(6)">
+            <img src="The Jungle book 2.jpg">
+                <div class="overlay overlayleft">
+                <div class="description">
+                    The Jungle book
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Fotter Code  -->
+    <footer class="footer" id="footer">
+        <div class="left-footer">
+          <h2>Show Time</h2>
+          <div>
+              Show time site is a site that gives you
+              a brief description about the movies and the Rate of the movies
+              & little information about the team of the movie. 
+          </div>
+        </div>
+        <div class="middle-footer">
+            <a class="fas fa-map-marked-alt link" target="_blank" href="https://goo.gl/maps/fkfYCh9yDdqV9jn79"> Our location <i class="fas fa-globe-africa link"></i>
+            </a>
+  
+            <br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3452.5993374281165!2d31.285106973186938!3d30.077017180458924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1599752931878!5m2!1sen!2seg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="right-footer">
+          <h2><i class="fas fa-envelope"></i>  Send Message</h2>
+          <textarea type="text"></textarea>
+            <input type="button" value="Send">
+        </div>
+      </footer>
+
+
+
+        <!-- Sign up Form  -->
+        <section class="signUp" id="signUp">
+            <div>
+                <h1 class="head">SIGN UP FOR REVIEWERS</h1><br>
+                <span class="closeBtn" onclick="closeSignUpForm()"><i class="fas fa-times-circle"></i></span>
+                <hr>
+                <div class="facebookSingUp"><i class="fab fa-facebook"></i> SIGN UP WITH FACEBOOK</div>
+                <hr><br>
+                <form>
+                    <label for="first name">First Name</label><label for="last name">Last Name</label><br>
+                    <input type="text" class="firstName">
+                    <input type="text" class="lastName">
+                    <label for="email">Email</label><br>
+                    <input type="email" class="email"><br>
+                    <label for="password">Password</label><br><br>
+                    <p>Use at least 8 characters and include a number or a symbol.</p>
+                    <input type="password" class="password"><br><br>
+                    <input type="checkbox" class="checkbox">
+                    <p>By signing up, you agree to receiving newsletters from Show Time. You may later unsubscribe.</p><br>
+                    <input type="button" class="CreateAccBtn" value="Create Your Account">
+                </form>
+            </div>
+        </section>
+
+            <!-- Log in Form -->
+        <section class="logIn" id="logIn">
+            <div>
+                <h1>SIGN IN <span class="fas fa-times-circle" onclick="closeLogInForm()"></span></h1>
+                <!-- <div class="facebookSingUp"><i class="fab fa-facebook"></i> SIGN UP WITH FACEBOOK</div> -->
+                <br><hr><br>
+                <h1>ADMIN SIGN IN</h1>
+                <form>
+                    <label for="email address">Email address</label><br>
+                    <input type="email" id="adminEmail">
+                    <label for="password" id="adminPasswordText">Password</label><br>
+                    <input type="password" id="adminPassword">
+                    <input type="button" class="logInBtn" onclick="adminLogin()" value="LOG IN">
+                </form>
+                <br><hr><br>
+                <h1>USER SIGN IN</h1>
+                <form>
+                    <label for="email address">Email address</label><br>
+                    <input type="email" id="userEmail">
+                    <label for="password" id="userPasswordText">Password</label><br>
+                    <input type="password" id="userPassword">
+                    <input type="button" class="logInBtn" onclick="userLogin()" value="LOG IN">
+                </form>
+                <div class="forgot">
+                    <h3><a href="">FORGOT YOUR PASSWORD?</a></h3>
+                    <p>Don't have an account? <h3><a onclick="signUpForm()">SIGN UP HERE</a></h3></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- To the top of the page button  -->
+        <button onclick="toTopButton()" id="toTopBtn"><i class="fas fa-arrow-circle-up"></i></button>
+
+
+
+        <!--  Content To the Description Start   -->
+            <!-- First Movie Start (Mulan) -->
+        <div class="banner-img img1" id="banner-img1"></div>
+        <div class="banner-text" id="banner-text1">
+            <h1 >
+                <p>
+                Title:<strong> Mulan</strong> (2020)
+                </p>
+                <p>
+                </p>
+            </h1>                
+            <span class="fas fa-times-circle" onclick="closeDiscription(1)"></span>
+            <article>    
+                <img alt="Jamie Lee Curtis" title="Jamie Lee Curtis" src="Mulan.jpg" alt="knives out"/>         
+                <div class="outline">
+                    <p >
+                        To save her ailing father from serving 
+                        in the Imperial Army, a fearless young woman 
+                        disguises herself as a man to battle northern
+                        invaders in China.
+                    </p>
+                </div>
+                <div class="director">
+                    <span><b>Directors:</b> Niki Caro.</span>
+                </div>
+                <div class="writter">
+                    <span><b>writer:</b> Elizabeth Martin, Lauren Hynek.</span>
+                </div>
+                <div class="actor">
+                    <span><b>Stars:</b>Yifei Liu,Donnie Yen,Jason Scott Lee,Yoson An,Li Gong,Jet Li.</span>
+                </div>
+                <div class="rate">
+                    <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></span>
+                </div>
+            </article>
+        </div>
+                    <!-- First Movie End (Mulan) -->
+
+            <!-- Second Movie Start (Wonder) -->
+            <div class="banner-img img2" id="banner-img2"></div>
+            <div class="banner-text" id="banner-text2">
+                <h1 >
+                    <p>
+                    Title:<strong> Wonder</strong> (2017)
+                    </p>
+                    <p>
+                    </p>
+                </h1>                
+                <span class="fas fa-times-circle" onclick="closeDiscription(2)"></span>
+                <article>    
+                    <img alt="Jamie Lee Curtis" title="Jamie Lee Curtis" src="Wonder.jpg" alt="Wonder"/>         
+                    <div class="outline">
+                        <p >
+                            The movie is about a fifth-grade boy
+                            born with facial differences. 
+                            It follows his extraordinary journey
+                            that will unite people around him and
+                            prove you can't blend in when you were
+                            born to stand out.
+                        </p>
+                    </div>
+                    <div class="director">
+                        <span><b>Directors:</b> Stephen Chbosky</span>
+                    </div>
+                    <div class="writter">
+                        <span><b>writer:</b> Elizabeth Martin, Lauren Hynek.</span>
+                    </div>
+                    <div class="actor">
+                        <span><b>Stars:</b>Jacob Tremblay, Owen Wilson, Izabela Vidovic.</span>
+                    </div>
+                    <div class="rate">
+                        <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                </article>
+            </div>
+                        <!-- Second Movie End (Wonder) -->
+
+
+                                    <!-- Third Movie Start (Knives Out) -->
+            <div class="banner-img img3" id="banner-img3"></div>
+            <div class="banner-text" id="banner-text3">
+                <h1 >
+                    <p>
+                        Title:<strong>Knives Out</strong> (2019)
+                    </p>
+                    <p>
+                        Knives out
+                    </p>
+                </h1>                
+                <span class="fas fa-times-circle" onclick="closeDiscription(3)"></span>
+                <article>    
+                    <img alt="knvies Out" title="knvies Out" src="knvies Out.jpg" alt="knvies Out"/>         
+                    <div class="outline">
+                        <p >
+                            When renowned crime novelist Harlan Thrombey
+                            is found dead at his estate just after his
+                            85th birthday, the inquisitive and debonair
+                            Detective Benoit Blanc is mysteriously enlisted
+                            to investigate. From Harlan's dysfunctional
+                            family to his devoted staff, Blanc sifts
+                            through a web of red herrings and self-serving
+                            lies to uncover the truth behind Harlan's
+                            untimely death.
+                        </p>
+                    </div>
+                    <div class="director">
+                        <span><b>Directors:</b> Rian Johnson</span>
+                    </div>
+                    <div class="writter">
+                        <span><b>writer:</b> Rian Johnson</span>
+                    </div>
+                    <div class="actor">
+                        <span><b>Stars:</b> Daniel Craig, Chris Evans, Ana de Armas.</span>
+                    </div>
+                    <div class="rate">
+                        <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                </article>
+            </div>
+                        <!-- Third Movie End (Knives Out) -->
+
+
+                          <!-- 4th Movie Start (Greyhound) -->
+            <div class="banner-img img4" id="banner-img4"></div>
+            <div class="banner-text" id="banner-text4">
+                <h1 >
+                    <p>
+                        Title:<strong>Greyhound</strong> (2020)
+                    </p>
+                    <p>
+                        Greyhound
+                    </p>
+                </h1>                
+                <span class="fas fa-times-circle" onclick="closeDiscription(4)"></span>
+                <article>    
+                    <img alt="Greyhound" title="Greyhound" src="Greyhound.jpg" alt="Greyhound"/>         
+                    <div class="outline">
+                        <p >
+                            Early in World War II, an inexperienced U.S.
+                             Navy captain must lead an Allied convoy
+                              being stalked by Nazi U-boat wolfpacks.
+                        </p>
+                    </div>
+                    <div class="director">
+                        <span><b>Directors:</b> Aaron Schneider,</span>
+                    </div>
+                    <div class="writter">
+                        <span><b>writer:</b> Aaron Schneider,</span>
+                    </div>
+                    <div class="actor">
+                        <span><b>Stars:</b> Tom Hanks, Stephen Graham, Elisabeth Shue.</span>
+                    </div>
+                    <div class="rate">
+                        <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                </article>
+            </div>
+                        <!-- 4th Movie End (Greyhound) -->
+
+                                                  <!-- 5th Movie Start (Avengers End Game) -->
+            <div class="banner-img img5" id="banner-img5"></div>
+            <div class="banner-text" id="banner-text5">
+                <h1 >
+                    <p>
+                        Title:<strong>Avengers: Endgame </strong> (2019)
+                    </p>
+                    <p>
+                        Avengers: Endgame
+                    </p>
+                </h1>                
+                <span class="fas fa-times-circle" onclick="closeDiscription(5)"></span>
+                <article>    
+                    <img alt="Avengers: Endgame" title="Avengers: Endgame" src="Avengers End Game.jpg" alt="Avengers: Endgame"/>         
+                    <div class="outline">
+                        <p >
+                            After the devastating events of Avengers:
+                            Infinity War, the universe is in ruins 
+                            due to the efforts of the Mad Titan, Thanos.
+                            With the help of remaining allies, 
+                            the Avengers must assemble once more
+                            in order to undo Thanos' actions and
+                            restore order to the universe once
+                            and for all, no matter what consequences
+                            may be in store.
+                        </p>
+                    </div>
+                    <div class="director">
+                        <span><b>Directors:</b> Joe Russo, Anthony Russo.</span>
+                    </div>
+                    <div class="writter">
+                        <span><b>writer:</b> Joe Russo, Anthony Russo,</span>
+                    </div>
+                    <div class="actor">
+                        <span><b>Stars:</b> Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle.</span>
+                    </div>
+                    <div class="rate">
+                        <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></span>
+                    </div>
+                </article>
+            </div>
+                        <!-- 5th Movie End (Avengers End Game) -->
+
+                                                                          <!-- 6th Movie Start (The Jungle Book) -->
+            <div class="banner-img img6" id="banner-img6"></div>
+            <div class="banner-text" id="banner-text6">
+                <h1 >
+                    <p>
+                        Title:<strong>The Jungle book </strong> (2016)
+                    </p>
+                    <p>
+                        The Jungle Book
+                    </p>
+                </h1>                
+                <span class="fas fa-times-circle" onclick="closeDiscription(6)"></span>
+                <article>    
+                    <img alt="Avengers: Endgame" title="Avengers: Endgame" src="The Jungle book 2.jpg" alt="Avengers: Endgame"/>         
+                    <div class="outline">
+                        <p >
+                            In this reimagining of the classic collection
+                            of stories by Rudyard Kipling, director
+                            Jon Favreau uses visually stunning CGI to
+                            create the community of animals surrounding
+                            Mowgli (Neel Sethi), a human boy adopted by
+                            a pack of wolves. The appearance of a 
+                            villainous tiger named Shere Khan
+                            (voiced byIdris Elba) forces Mowgli's
+                            guardian, the panther Bagheera 
+                            (Ben Kingsley), to shepherd the child
+                            to safety in the "man village.".
+                        </p>
+                    </div>
+                    <div class="director">
+                        <span><b>Directors:</b> Jon Favreau.</span>
+                    </div>
+                    <div class="writter">
+                        <span><b>writer:</b> Jon Favreau.</span>
+                    </div>
+                    <div class="actor">
+                        <span><b>Stars:</b>Neel Sethi, Bill Murray, Ben Kingsley.</span>
+                    </div>
+                    <div class="rate">
+                        <span><b>Rating:</b> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                </article>
+            </div>
+                        <!-- 6th Movie End (The Jungle Book) -->
+
+        <!-- Trying Content To the Description End   -->
+
+
+
+
+
+        
+
+    <script src="Script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+  
